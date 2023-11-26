@@ -1,0 +1,341 @@
+* {
+    font-family: 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: orangered;
+}
+
+/* ________________________________________________________________________________ */
+
+/* start nav bar  */
+.nav-bar {}
+
+/* start nav1  */
+.nav-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5em;
+    align-items: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.nav-1 .one {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-1 .one>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-1 .one>div>i {
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.nav-1 .one>div>p {
+    color: #818181;
+}
+
+.nav-1 .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-1 .social i {
+    background-color: #c9c9c9;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.nav-1 .social i:hover {
+    background-color: var(--main-color);
+}
+
+/* end nav1  */
+/* ____________________________________________________________________ */
+/* start nav2  */
+.nav-2 {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5em;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+.nav-2 h1 a {
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav-2 h1 a:active {
+    color: var(--main-color)
+}
+
+.visit-all {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 11em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visit-all>i {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.visit-all>p {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.visit-all:hover p {
+    color: var(--main-color)
+}
+
+.nav-2 .links .ul-cells {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s
+}
+
+.nav-2 .links .ul-cells li a {
+    color: black;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+
+.nav-2 .links .ul-cells li a:hover {
+    color: var(--main-color);
+}
+
+/* end nav2  */
+/* end nav bar  */
+/* ____________________________________________________  */
+/* start container-1  */
+.container-1{
+    background-image: url(../images/page-heading-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-1 .tx-cont1{
+    text-align: center;
+    line-height: 1.8;
+}
+.container-1 .tx-cont1 p{
+    background-color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+.container-1 .tx-cont1 h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px
+}
+/* end container-1  */
+/* _______________________________  */
+/* start container-2  */
+.container-2{
+    margin-top: 5em;
+    padding: 15px;
+}
+.container-2 .fl-cont2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container-2 .fl-cont2 .fl{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.6s;;
+}
+.container-2 .fl-cont2 .fl:first-child{
+    background-color: var(--main-color);
+}
+.container-2 .fl-cont2 .fl:hover{
+    background-color: var(--main-color);
+}
+.container-2 .villas {
+    margin-top: 4em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+    gap: 25px;
+    perspective: 300px;
+    perspective-origin: center center;
+}
+
+.container-2 .villas .v {
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 28em;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.container-2 .villas .v:hover {
+    transform: translateZ(8px);
+    box-shadow: 0px 0px 14px -3px black;
+}
+
+.container-2 .villas .v img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.container-2 .villas .v img:hover {
+    transform: scale(1.1) rotate(4deg);
+
+
+}
+
+.container-2 .villas .v .sub {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-2 .villas .v .sub p {
+    text-transform: capitalize;
+    background-color: #ff450052;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container-2 .villas .v .sub h3 {
+    color: var(--main-color);
+    font-size: 23px;
+}
+
+.container-2 .villas .v .h3-v {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.container-2 .villas .v .other {
+    display: grid;
+    grid-template-columns: repeat(2, 115px);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.container-2 .villas .v .other h5 {
+    text-transform: capitalize;
+}
+
+.container-2 .villas .v .other h5>span {
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+.container-2 .villas .v .butt {
+    height: 12%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container-2 .villas .v .butt button {
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.container-2 .villas .v .butt button:hover {
+    background-color: var(--main-color);
+}
+/* end container-2  */
+/* _______________________________  */
+/* start container-3  */
+.container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 5em;
+}
+.container-3 .num{
+    background-color: black;
+    color: white;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s
+}
+.container-3 .num:nth-child(2){
+    background-color: var(--main-color);
+}
+.container-3 .num:hover{
+    background-color: var(--main-color);
+}
+/* end container-3  */
+/* ____________________________________________________  */
+/* start footer  */
+.footer{
+    background-color: black;
+    padding: 3em;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 10em;
+    text-align: center;
+}

@@ -1,0 +1,303 @@
+* {
+    font-family: 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: orangered;
+}
+
+/* ________________________________________________________________________________ */
+
+/* start nav bar  */
+.nav-bar {}
+
+/* start nav1  */
+.nav-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5em;
+    align-items: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.nav-1 .one {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-1 .one>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-1 .one>div>i {
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.nav-1 .one>div>p {
+    color: #818181;
+}
+
+.nav-1 .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-1 .social i {
+    background-color: #c9c9c9;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.nav-1 .social i:hover {
+    background-color: var(--main-color);
+}
+
+/* end nav1  */
+/* ____________________________________________________________________ */
+/* start nav2  */
+.nav-2 {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5em;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+.nav-2 h1 a {
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav-2 h1 a:active {
+    color: var(--main-color)
+}
+
+.visit-all {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 11em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visit-all>i {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.visit-all>p {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.visit-all:hover p {
+    color: var(--main-color)
+}
+
+.nav-2 .links .ul-cells {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.7s
+}
+
+.nav-2 .links .ul-cells li a {
+    color: black;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+
+.nav-2 .links .ul-cells li a:hover {
+    color: var(--main-color);
+}
+
+/* end nav2  */
+/* end nav bar  */
+/* __________________________________________________________________  */
+/* start container-1  */
+.container-1 {
+    background-image: url(../images/page-heading-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-1 .tx-cont1 {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.container-1 .tx-cont1 p {
+    background-color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.container-1 .tx-cont1 h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px
+}
+
+/* end container-1  */
+/* _______________________________  */
+/* start container-2  */
+.container-2{
+    padding: 15px;
+}
+.container-2 .cont2 {
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.container-2 .cont2 .part1 {
+    width: 50%
+}
+
+.container-2 .cont2 .part1 iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-2 .cont2 .part1 .ph-mail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.container-2 .cont2 .part1 .ph-mail>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px -1px black;
+}
+
+.container-2 .cont2 .part1 .ph-mail div i {
+    color: var(--main-color);
+    font-size: 45px;
+}
+
+.container-2 .cont2 .part1 .ph-mail div .tx-ph {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 .cont2 .part1 .ph-mail div .tx>p {
+    text-transform: capitalize;
+}
+
+.container-2 .cont2 form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px -2px black;
+    width: 22em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.container-2 .cont2 form .in22 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-2 .cont2 form .in22 label {
+    text-transform: capitalize;
+}
+
+.container-2 .cont2 form .in22 input {
+    outline: none;
+    border: none;
+    height: 3em;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #c9c9c9;
+}
+
+.container-2 .cont2 form .in22 textarea {
+    outline: none;
+    border: none;
+    height: 10em;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #c9c9c9;
+}
+
+.container-2 .cont2 form input[type="submit"] {
+    align-self: flex-start;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+
+.container-2 .cont2 form input[type="submit"]:hover {
+    background-color: var(--main-color);
+}
+::placeholder{
+    color:black;
+    text-transform: capitalize;
+}
+/* end container-6  */
+/* ____________________________________________________  */
+/* start footer  */
+.footer{
+    background-color: black;
+    padding: 3em;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 0;
+    text-align: center;
+}
